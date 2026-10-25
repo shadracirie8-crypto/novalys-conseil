@@ -1,0 +1,695 @@
+
+{% extends "website/base.html" %}
+{% load static %}
+
+{% block title %}À propos | NOVALYS CONSEIL{% endblock %}
+
+{% block content %}
+
+<!-- SECTION 1 : PRÉSENTATION -->
+<section class="about-hero">
+    <div class="about-hero-overlay"></div>
+
+    <div class="container about-hero-inner reveal">
+        <span class="eyebrow">À propos de NOVALYS CONSEIL</span>
+
+        <h1>
+            Donner une nouvelle dimension<br>
+            <span>à vos ambitions.</span>
+        </h1>
+
+        <p>
+            Nous imaginons des solutions qui aident les PME à mieux
+            s'organiser, à structurer leur développement et à tirer
+            parti des opportunités du numérique.
+        </p>
+    </div>
+</section>
+
+
+<!-- SECTION 2 : QUI SOMMES-NOUS ? -->
+<section class="section about-presentation">
+    <div class="container about-grid">
+
+        <div class="about-panel reveal">
+            <div class="about-panel-decoration"></div>
+
+            <span class="about-panel-label">NOTRE VISION</span>
+
+            <div class="about-panel-line"></div>
+
+            <h2>
+                Faire de vos ambitions
+                un projet structuré.
+            </h2>
+
+            <p>
+                Une vision claire. Des solutions concrètes.
+                Une progression réfléchie.
+            </p>
+
+            <span class="about-panel-number">N.</span>
+        </div>
+
+        <div class="about-content reveal">
+            <span class="eyebrow">Qui sommes-nous ?</span>
+
+            <h2>
+                Une approche tournée vers l'avenir.
+            </h2>
+
+            <p>
+                NOVALYS CONSEIL est un concept de cabinet de conseil
+                imaginé pour illustrer l'accompagnement des petites
+                et moyennes entreprises dans leurs projets de
+                développement et de transformation.
+            </p>
+
+            <p>
+                Notre approche repose sur une conviction :
+                une entreprise progresse plus sereinement lorsqu'elle
+                dispose d'objectifs clairs, d'une organisation adaptée
+                et d'outils cohérents avec ses besoins.
+            </p>
+
+            <p>
+                Nous mettons en avant une démarche structurée,
+                qui commence par la compréhension des besoins et
+                se poursuit par la recherche de solutions concrètes.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- SECTION 3 : MISSION ET VISION -->
+<section class="about-mission-section">
+    <div class="container">
+
+        <div class="about-section-heading reveal">
+            <span class="eyebrow">Notre raison d'être</span>
+
+            <h2>
+                Donner du sens à chaque<br>
+                <span>décision stratégique.</span>
+            </h2>
+
+            <p>
+                Une entreprise ne se développe pas uniquement
+                grâce à ses ambitions, mais aussi grâce aux choix
+                et aux actions qui les rendent possibles.
+            </p>
+        </div>
+
+        <div class="about-mission-grid">
+
+            <article class="about-mission-card reveal">
+                <div class="about-card-icon">↗</div>
+
+                <span>01 / NOTRE MISSION</span>
+
+                <h3>Accompagner le développement</h3>
+
+                <p>
+                    Présenter des approches et des solutions qui
+                    aident les entreprises à clarifier leurs objectifs,
+                    à structurer leurs projets et à améliorer leur
+                    fonctionnement.
+                </p>
+            </article>
+
+            <article class="about-mission-card reveal">
+                <div class="about-card-icon">✧</div>
+
+                <span>02 / NOTRE VISION</span>
+
+                <h3>Construire une croissance durable</h3>
+
+                <p>
+                    Encourager une vision à long terme fondée sur
+                    la réflexion stratégique, l'adaptation et
+                    l'amélioration continue.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- SECTION 4 : NOS VALEURS -->
+<section class="section about-values-section">
+    <div class="container">
+
+        <div class="about-section-heading reveal">
+            <span class="eyebrow">Notre état d'esprit</span>
+
+            <h2>Les principes qui guident<br>notre approche.</h2>
+
+            <p>
+                Quatre principes au cœur de l'identité de NOVALYS CONSEIL.
+            </p>
+        </div>
+
+        <div class="about-values-grid">
+
+            <article class="about-value reveal">
+                <span class="about-value-number">01</span>
+                <h3>Clarté</h3>
+                <p>
+                    Comprendre les enjeux avant de définir les priorités.
+                </p>
+            </article>
+
+            <article class="about-value reveal">
+                <span class="about-value-number">02</span>
+                <h3>Rigueur</h3>
+                <p>
+                    Privilégier une démarche structurée et cohérente.
+                </p>
+            </article>
+
+            <article class="about-value reveal">
+                <span class="about-value-number">03</span>
+                <h3>Innovation</h3>
+                <p>
+                    Explorer de nouvelles façons de répondre aux besoins.
+                </p>
+            </article>
+
+            <article class="about-value reveal">
+                <span class="about-value-number">04</span>
+                <h3>Progrès</h3>
+                <p>
+                    Favoriser l'amélioration et l'évolution dans la durée.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- SECTION 5 : CONCLUSION -->
+<section class="about-cta">
+    <div class="container about-cta-inner reveal">
+
+        <div>
+            <span class="eyebrow">La suite commence ici</span>
+
+            <h2>
+                Chaque ambition mérite<br>
+                une réflexion à sa hauteur.
+            </h2>
+
+            <p>
+                Découvrez nos domaines d'expertise ou présentez-nous
+                votre projet pour engager la réflexion.
+            </p>
+        </div>
+
+        <div class="about-cta-actions">
+            <a href="{% url 'website:services' %}" class="btn btn-gold">
+                Nos services <span>↗</span>
+            </a>
+
+            <a href="{% url 'website:contact' %}" class="btn btn-outline">
+                Nous contacter
+            </a>
+        </div>
+
+    </div>
+    
+</section>
+<!-- MENTION DE DÉMONSTRATION -->
+<div class="demo-disclaimer">
+    NOVALYS CONSEIL 
+</div>
+
+{% endblock %}
+
+
+{% block extra_css %}
+<style>
+/* =========================================
+   PAGE À PROPOS — NOVALYS CONSEIL
+   ========================================= */
+
+/* HERO */
+.about-hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 95px 0 100px;
+    color: #fff;
+    background-color: #10243a;
+    background-image:
+        linear-gradient(
+            100deg,
+            rgba(10, 27, 46, 0.96),
+            rgba(16, 36, 58, 0.83)
+        ),
+        url("{% static 'website/images/buildings.jpg' %}");
+    background-position: center;
+    background-size: cover;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(
+        circle at 85% 20%,
+        rgba(201, 162, 90, 0.15),
+        transparent 35%
+    );
+}
+
+.about-hero-inner {
+    max-width: 900px;
+}
+
+.about-hero .eyebrow,
+.about-section-heading .eyebrow,
+.about-cta .eyebrow {
+    color: #d1a858;
+}
+
+.about-hero h1 {
+    margin: 20px 0;
+    color: #fff;
+    font-size: clamp(2.7rem, 6vw, 4.8rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.045em;
+}
+
+.about-hero h1 span {
+    color: #d1a858;
+}
+
+.about-hero p {
+    max-width: 680px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.08rem;
+    line-height: 1.9;
+}
+
+
+/* PRÉSENTATION */
+.about-presentation {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #fff;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 75px;
+}
+
+.about-panel {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    min-height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45px;
+    border: 1px solid rgba(209, 168, 88, 0.45);
+    border-radius: 20px;
+    color: #fff;
+    background-color: #10243a;
+    background-image:
+        linear-gradient(
+            145deg,
+            rgba(10, 27, 46, 0.94),
+            rgba(16, 36, 58, 0.85)
+        ),
+        url("{% static 'website/images/buildings.jpg' %}");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 20px 55px rgba(16, 36, 58, 0.12);
+}
+
+.about-panel-decoration {
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    z-index: -1;
+    width: 220px;
+    height: 220px;
+    border: 1px solid rgba(209, 168, 88, 0.4);
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 24px rgba(209, 168, 88, 0.035),
+        0 0 0 48px rgba(209, 168, 88, 0.025);
+}
+
+.about-panel-label {
+    color: #d1a858;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+}
+
+.about-panel-line {
+    width: 54px;
+    height: 2px;
+    margin: 25px 0;
+    background: #d1a858;
+}
+
+.about-panel h2 {
+    max-width: 350px;
+    margin: 0 0 20px;
+    color: #fff;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    line-height: 1.25;
+}
+
+.about-panel p {
+    max-width: 310px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.8;
+}
+
+.about-panel-number {
+    position: absolute;
+    right: 25px;
+    bottom: 5px;
+    color: rgba(255, 255, 255, 0.07);
+    font-size: 7rem;
+    font-weight: 800;
+}
+
+.about-content .eyebrow {
+    color: #b58d42;
+}
+
+.about-content h2 {
+    margin: 18px 0 22px;
+    color: #10243a;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    line-height: 1.2;
+    letter-spacing: -0.035em;
+}
+
+.about-content p {
+    margin: 0 0 17px;
+    color: #647184;
+    font-size: 1rem;
+    line-height: 1.95;
+}
+
+
+/* MISSION ET VISION */
+.about-mission-section {
+    padding: 95px 0 100px;
+    color: #fff;
+    background: #10243a;
+}
+
+.about-section-heading {
+    max-width: 750px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.about-section-heading h2 {
+    margin: 17px 0;
+    color: #10243a;
+    font-size: clamp(2rem, 4vw, 3.3rem);
+    line-height: 1.2;
+    letter-spacing: -0.035em;
+}
+
+.about-mission-section .about-section-heading h2 {
+    color: #fff;
+}
+
+.about-section-heading p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #6c7887;
+    line-height: 1.85;
+}
+
+.about-mission-section .about-section-heading p {
+    color: rgba(255, 255, 255, 0.68);
+}
+
+.about-mission-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.about-mission-card {
+    position: relative;
+    padding: 36px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.045);
+    transition:
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.about-mission-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(209, 168, 88, 0.5);
+    background: rgba(255, 255, 255, 0.065);
+}
+
+.about-card-icon {
+    display: grid;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 26px;
+    place-items: center;
+    border: 1px solid rgba(209, 168, 88, 0.4);
+    border-radius: 14px;
+    color: #d1a858;
+    background: rgba(209, 168, 88, 0.09);
+    font-size: 1.7rem;
+}
+
+.about-mission-card > span:not(.about-card-icon) {
+    color: #d1a858;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+}
+
+.about-mission-card h3 {
+    margin: 14px 0;
+    color: #fff;
+    font-size: 1.45rem;
+}
+
+.about-mission-card p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.9;
+}
+
+
+/* VALEURS */
+.about-values-section {
+    padding-top: 100px;
+    padding-bottom: 105px;
+    background: #f7f8fa;
+}
+
+.about-values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.about-value {
+    padding: 28px 23px;
+    border: 1px solid rgba(16, 36, 58, 0.09);
+    border-radius: 16px;
+    background: #fff;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.about-value:hover {
+    transform: translateY(-5px);
+    border-color: rgba(201, 162, 90, 0.6);
+    box-shadow: 0 14px 35px rgba(16, 36, 58, 0.06);
+}
+
+.about-value-number {
+    display: block;
+    margin-bottom: 22px;
+    color: #c9a25a;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.about-value h3 {
+    margin: 0 0 12px;
+    color: #10243a;
+    font-size: 1.25rem;
+}
+
+.about-value p {
+    margin: 0;
+    color: #697586;
+    font-size: 0.92rem;
+    line-height: 1.8;
+}
+
+
+/* APPEL À L'ACTION */
+.about-cta {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 75px 0;
+    color: #fff;
+    background-color: #10243a;
+    background-image:
+        linear-gradient(
+            100deg,
+            rgba(9, 25, 43, 0.96),
+            rgba(16, 36, 58, 0.84)
+        ),
+        url("{% static 'website/images/buildings.jpg' %}");
+    background-position: center;
+    background-size: cover;
+}
+
+.about-cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-cta h2 {
+    margin: 16px 0;
+    color: #fff;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+.about-cta p {
+    max-width: 600px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.85;
+}
+
+.about-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+
+/* TABLETTES */
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 42px;
+    }
+
+    .about-panel {
+        min-height: 330px;
+    }
+
+    .about-values-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about-cta-inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+
+/* TÉLÉPHONES */
+@media (max-width: 600px) {
+    .about-hero {
+        padding: 70px 0 75px;
+    }
+
+    .about-hero h1 {
+        font-size: clamp(2.3rem, 9vw, 3.3rem);
+    }
+
+    .about-hero p {
+        font-size: 0.98rem;
+    }
+
+    .about-presentation,
+    .about-values-section {
+        padding-top: 65px;
+        padding-bottom: 70px;
+    }
+
+    .about-panel {
+        min-height: 310px;
+        padding: 30px;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+    }
+
+    .about-mission-section {
+        padding: 68px 0 72px;
+    }
+
+    .about-mission-grid,
+    .about-values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-mission-card {
+        padding: 28px;
+    }
+
+    .about-cta {
+        padding: 60px 0;
+    }
+
+    .about-cta-actions {
+        align-items: stretch;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-cta-actions .btn {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+/* ACCESSIBILITÉ */
+@media (prefers-reduced-motion: reduce) {
+    .about-mission-card,
+    .about-value {
+        transition: none;
+    }
+}
+</style>
+{% endblock %}

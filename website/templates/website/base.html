@@ -1,0 +1,298 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}NOVALYS CONSEIL | Accompagner votre croissance{% endblock %}</title>
+
+    <meta
+        name="description"
+        content="NOVALYS CONSEIL accompagne les entreprises dans leur stratégie, leur organisation et leur transformation numérique."
+    >
+
+    <meta name="theme-color" content="#10243a">
+
+    <link
+        rel="stylesheet"
+        href="{% static 'website/css/style.css' %}"
+    >
+
+    {% block extra_css %}{% endblock %}
+</head>
+
+<body>
+
+    <!-- En-tête et navigation -->
+    <header class="site-header">
+        <div class="container navbar">
+
+            <!-- Logo et nom de l'entreprise -->
+            <a
+                class="brand"
+                href="{% url 'website:home' %}"
+                aria-label="NOVALYS CONSEIL, accueil"
+            >
+                <img
+                    src="{% static 'website/images/logo-novalys.png' %}"
+                    alt=""
+                    class="brand-icon"
+                    width="44"
+                    height="44"
+                >
+
+                <span class="brand-name">
+                    NOVALYS <span>CONSEIL.</span>
+                </span>
+            </a>
+
+            <!-- Bouton hamburger pour mobile -->
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Ouvrir le menu"
+                aria-controls="main-navigation"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Liens de navigation -->
+            <nav
+                class="nav-links"
+                id="main-navigation"
+                aria-label="Navigation principale"
+            >
+                <a href="{% url 'website:home' %}">
+                    Accueil
+                </a>
+
+                <a href="{% url 'website:services' %}">
+                    Nos services
+                </a>
+
+                <a href="{% url 'website:about' %}">
+                    À propos
+                </a>
+
+                <a
+                    class="nav-cta"
+                    href="{% url 'website:contact' %}"
+                >
+                    Contact
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Contenu spécifique à chaque page -->
+    <main id="contenu-principal">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Bouton WhatsApp flottant -->
+    <a
+        href="https://wa.me/2250595971562?text=Bonjour%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20services."
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contacter NOVALYS CONSEIL sur WhatsApp"
+    >
+        WhatsApp
+    </a>
+
+    <!-- Pied de page -->
+   
+<!-- Pied de page NOVALYS CONSEIL -->
+<footer class="site-footer">
+    <div class="footer-overlay"></div>
+
+    <div class="container footer-inner">
+
+        <!-- Identité -->
+        <div class="footer-top">
+
+            <a
+                href="{% url 'website:home' %}"
+                class="footer-brand"
+                aria-label="NOVALYS CONSEIL, accueil"
+            >
+                <img
+                    src="{% static 'website/images/logo-novalys.png' %}"
+                    alt=""
+                    class="footer-logo"
+                    loading="lazy"
+                >
+                <span>
+                    <strong>NOVALYS <b>CONSEIL.</b></strong>
+                    <small>STRATÉGIE · TRANSFORMATION · PERFORMANCE</small>
+                </span>
+            </a>
+
+            <!-- Navigation -->
+            <div class="footer-column">
+                <h3>Navigation</h3>
+                <a href="{% url 'website:home' %}">Accueil</a>
+                <a href="{% url 'website:services' %}">Nos services</a>
+                <a href="{% url 'website:about' %}">À propos</a>
+                <a href="{% url 'website:contact' %}">Contact</a>
+            </div>
+
+            <!-- Services -->
+            <div class="footer-column">
+                <h3>Nos expertises</h3>
+                <a href="{% url 'website:services' %}">Conseil en stratégie</a>
+                <a href="{% url 'website:services' %}">Transformation numérique</a>
+                <a href="{% url 'website:services' %}">Organisation</a>
+                <a href="{% url 'website:services' %}">Performance</a>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-column">
+                <h3>Restons en contact</h3>
+                <p>Vous avez un projet en tête ?</p>
+                <a
+                    class="footer-contact-link"
+                    href="{% url 'website:contact' %}"
+                >
+                    Parlons de votre projet <span>↗</span>
+                </a>
+                <a
+                    href="https://wa.me/2250595971562"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    WhatsApp
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Séparation -->
+        <div class="footer-divider"></div>
+
+        <!-- Bas du footer -->
+        <div class="footer-bottom">
+            <p>© 2026 NOVALYS CONSEIL. Tous droits réservés.</p>
+
+            <div class="footer-socials">
+                <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                >in</a>
+
+                <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                >f</a>
+
+                <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                >◎</a>
+            </div>
+
+            <a class="footer-back-top" href="#contenu-principal">
+                Retour en haut ↑
+            </a>
+        </div>
+
+    </div>
+</footer>
+
+
+    <!-- Gestion du menu mobile -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menu-toggle");
+            const mainNavigation = document.getElementById("main-navigation");
+
+            if (!menuToggle || !mainNavigation) {
+                return;
+            }
+
+            function closeMenu() {
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.setAttribute("aria-label", "Ouvrir le menu");
+                mainNavigation.classList.remove("is-open");
+            }
+
+            menuToggle.addEventListener("click", function () {
+                const isExpanded =
+                    menuToggle.getAttribute("aria-expanded") === "true";
+
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    String(!isExpanded)
+                );
+
+                menuToggle.setAttribute(
+                    "aria-label",
+                    isExpanded ? "Ouvrir le menu" : "Fermer le menu"
+                );
+
+                mainNavigation.classList.toggle("is-open", !isExpanded);
+            });
+
+            mainNavigation.querySelectorAll("a").forEach(function (link) {
+                link.addEventListener("click", closeMenu);
+            });
+
+            document.addEventListener("keydown", function (event) {
+                if (event.key === "Escape") {
+                    closeMenu();
+                    menuToggle.focus();
+                }
+            });
+
+            window.addEventListener("resize", function () {
+                if (window.innerWidth > 800) {
+                    closeMenu();
+                }
+            });
+        });
+    </script>
+
+    <!-- Animations d'apparition au défilement -->
+    <script>
+        document.documentElement.classList.add("js-reveal");
+
+        const revealItems = document.querySelectorAll(".reveal");
+
+        if ("IntersectionObserver" in window) {
+            const revealObserver = new IntersectionObserver(
+                (entries, observer) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("is-visible");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                { threshold: 0.12 }
+            );
+
+            revealItems.forEach((item) => {
+                revealObserver.observe(item);
+            });
+        } else {
+            revealItems.forEach((item) => {
+                item.classList.add("is-visible");
+            });
+        }
+    </script>
+
+</body>
+</html>

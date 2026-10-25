@@ -1,0 +1,956 @@
+
+{% extends "website/base.html" %}
+{% load static %}
+
+{% block title %}Nos services | NOVALYS CONSEIL{% endblock %}
+
+{% block content %}
+
+<!-- SECTION 1 : PRÉSENTATION DES SERVICES -->
+<section class="services-hero">
+    <div class="services-hero-overlay"></div>
+
+    <div class="container services-hero-content reveal">
+        <span class="eyebrow">Notre expertise</span>
+
+        <h1>
+            Des solutions pensées<br>
+            pour <span>vos ambitions.</span>
+        </h1>
+
+        <p>
+            De la stratégie à la transformation numérique,
+            nous aidons les entreprises à structurer leurs idées
+            et à transformer leurs ambitions en résultats concrets.
+        </p>
+
+        <a href="#nos-expertises" class="btn btn-gold">
+            Découvrir nos expertises <span>↓</span>
+        </a>
+    </div>
+</section>
+
+
+<!-- CARTES DE SERVICES CONSERVÉES ET AMÉLIORÉES -->
+<section class="section section-light services-intro" id="nos-expertises">
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="eyebrow">Ce que nous faisons</span>
+
+            <h2>Trois expertises.<br>Une même ambition.</h2>
+
+            <p>
+                Des solutions complémentaires pour accompagner
+                le développement et la transformation des PME.
+            </p>
+        </div>
+
+        <div class="services-grid services-page-grid">
+
+            <!-- SERVICE 1 -->
+            <article class="service-card service-page-card reveal">
+                <div class="service-page-image">
+                    <img
+                        src="{% static 'website/images/strategie.jpg' %}"
+                        alt="Professionnels réunis autour d'une stratégie d'entreprise"
+                        loading="lazy"
+                    >
+                    <span class="service-image-number">01</span>
+                </div>
+
+                <div class="service-card-body">
+                    <span class="service-number">01 / STRATÉGIE</span>
+
+                    <h3>Conseil en stratégie</h3>
+
+                    <p>
+                        Définition des objectifs, planification et
+                        accompagnement du développement.
+                    </p>
+
+                    <a class="service-link" href="{% url 'website:contact' %}">
+                        Parlons de vos objectifs <span>↗</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- SERVICE 2 -->
+            <article class="service-card service-page-card reveal">
+                <div class="service-page-image">
+                    <img
+                        src="{% static 'website/images/numerique.jpg' %}"
+                        alt="Professionnel travaillant avec des outils numériques"
+                        loading="lazy"
+                    >
+                    <span class="service-image-number">02</span>
+                </div>
+
+                <div class="service-card-body">
+                    <span class="service-number">02 / NUMÉRIQUE</span>
+
+                    <h3>Transformation numérique</h3>
+
+                    <p>
+                        Présence en ligne, outils numériques et
+                        modernisation des processus.
+                    </p>
+
+                    <a class="service-link" href="{% url 'website:contact' %}">
+                        Parlons de votre projet <span>↗</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- SERVICE 3 -->
+            <article class="service-card service-page-card reveal">
+                <div class="service-page-image">
+                    <img
+                        src="{% static 'website/images/performance.jpg' %}"
+                        alt="Équipe analysant des indicateurs de performance"
+                        loading="lazy"
+                    >
+                    <span class="service-image-number">03</span>
+                </div>
+
+                <div class="service-card-body">
+                    <span class="service-number">03 / PERFORMANCE</span>
+
+                    <h3>Organisation et performance</h3>
+
+                    <p>
+                        Optimisation de l'organisation et amélioration
+                        des méthodes de travail.
+                    </p>
+
+                    <a class="service-link" href="{% url 'website:contact' %}">
+                        Améliorons vos méthodes <span>↗</span>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- SECTION 2 : GALERIE ANIMÉE DE DROITE À GAUCHE -->
+<section class="expertise-marquee-section">
+    <div class="container">
+
+        <div class="marquee-heading reveal">
+            <div>
+                <span class="eyebrow">Nos domaines d'intervention</span>
+                <h2>Des idées qui deviennent<br><span>des solutions.</span></h2>
+            </div>
+
+            <p>
+                Explorez les leviers qui peuvent aider votre entreprise
+                à évoluer, à se structurer et à gagner en efficacité.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="expertise-marquee" aria-label="Galerie de nos expertises">
+        <div class="expertise-track">
+
+            <!-- PREMIÈRE SÉRIE -->
+            <article class="expertise-slide">
+                <img
+                    src="{% static 'website/images/strategie.jpg' %}"
+                    alt=""
+                    loading="lazy"
+                >
+                <div class="expertise-slide-overlay"></div>
+                <div class="expertise-slide-content">
+                    <span>01 — ANTICIPER</span>
+                    <h3>Vision stratégique</h3>
+                    <p>Définir une direction claire pour avancer.</p>
+                    <a href="{% url 'website:contact' %}">
+                        Explorer <span>↗</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="expertise-slide">
+                <img
+                    src="{% static 'website/images/numerique.jpg' %}"
+                    alt=""
+                    loading="lazy"
+                >
+                <div class="expertise-slide-overlay"></div>
+                <div class="expertise-slide-content">
+                    <span>02 — INNOVER</span>
+                    <h3>Transformation numérique</h3>
+                    <p>Faire du numérique un levier de croissance.</p>
+                    <a href="{% url 'website:contact' %}">
+                        Explorer <span>↗</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="expertise-slide">
+                <img
+                    src="{% static 'website/images/performance.jpg' %}"
+                    alt=""
+                    loading="lazy"
+                >
+                <div class="expertise-slide-overlay"></div>
+                <div class="expertise-slide-content">
+                    <span>03 — OPTIMISER</span>
+                    <h3>Performance opérationnelle</h3>
+                    <p>Améliorer les processus et les méthodes.</p>
+                    <a href="{% url 'website:contact' %}">
+                        Explorer <span>↗</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="expertise-slide">
+                <img
+                    src="{% static 'website/images/philosophie.jpg' %}"
+                    alt=""
+                    loading="lazy"
+                >
+                <div class="expertise-slide-overlay"></div>
+                <div class="expertise-slide-content">
+                    <span>04 — ACCOMPAGNER</span>
+                    <h3>Développement des PME</h3>
+                    <p>Faire progresser les projets avec méthode.</p>
+                    <a href="{% url 'website:contact' %}">
+                        Explorer <span>↗</span>
+                    </a>
+                </div>
+            </article>
+
+
+            <!-- DEUXIÈME SÉRIE : COPIE POUR UN DÉFILEMENT CONTINU -->
+            <article class="expertise-slide" aria-hidden="true">
+                <img
+                    src="{% static 'website/images/strategie.jpg' %}"
+                    alt=""
+                    loading="lazy"
+                >
+                <div class="expertise-slide-overlay"></div>
+                <div class="expertise-slide-content">
+                    <span>01 — ANTICIPER</span>
+                    <h3>Vision stratégique</h3>
+                    <p>Définir une direction claire pour avancer.</p>
+                    <span class="expertise-fake-link">Explorer ↗</span>
+                </div>
+            </article>
+
+            <article class="expertise-slide" aria-hidden="true">
+                <img
+                    src="{% static 'website/images/numerique.jpg' %}"
+                    alt=""
+                    loading="lazy"
+                >
+                <div class="expertise-slide-overlay"></div>
+                <div class="expertise-slide-content">
+                    <span>02 — INNOVER</span>
+                    <h3>Transformation numérique</h3>
+                    <p>Faire du numérique un levier de croissance.</p>
+                    <span class="expertise-fake-link">Explorer ↗</span>
+                </div>
+            </article>
+
+            <article class="expertise-slide" aria-hidden="true">
+                <img
+                    src="{% static 'website/images/performance.jpg' %}"
+                    alt=""
+                    loading="lazy"
+                >
+                <div class="expertise-slide-overlay"></div>
+                <div class="expertise-slide-content">
+                    <span>03 — OPTIMISER</span>
+                    <h3>Performance opérationnelle</h3>
+                    <p>Améliorer les processus et les méthodes.</p>
+                    <span class="expertise-fake-link">Explorer ↗</span>
+                </div>
+            </article>
+
+            <article class="expertise-slide" aria-hidden="true">
+                <img
+                    src="{% static 'website/images/philosophie.jpg' %}"
+                    alt=""
+                    loading="lazy"
+                >
+                <div class="expertise-slide-overlay"></div>
+                <div class="expertise-slide-content">
+                    <span>04 — ACCOMPAGNER</span>
+                    <h3>Développement des PME</h3>
+                    <p>Faire progresser les projets avec méthode.</p>
+                    <span class="expertise-fake-link">Explorer ↗</span>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+    <div class="container marquee-note">
+        <span class="marquee-note-dot"></span>
+        <p>Survolez les images pour prendre le temps de découvrir chaque expertise.</p>
+    </div>
+</section>
+
+
+<!-- SECTION 3 : NOTRE MÉTHODE D'ACCOMPAGNEMENT -->
+<section class="section services-method-section">
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="eyebrow">Notre approche</span>
+
+            <h2>Un accompagnement<br><span>en trois étapes.</span></h2>
+
+            <p>
+                Une démarche structurée pour partir de vos besoins
+                et construire des solutions adaptées à votre entreprise.
+            </p>
+        </div>
+
+        <div class="method-grid">
+
+            <article class="method-card reveal">
+                <span class="method-number">01</span>
+                <div class="method-icon">⌕</div>
+                <span class="method-label">ÉTAPE 01</span>
+                <h3>Comprendre</h3>
+                <p>
+                    Échanger avec vous pour cerner vos objectifs,
+                    vos contraintes et vos priorités.
+                </p>
+            </article>
+
+            <article class="method-card reveal">
+                <span class="method-number">02</span>
+                <div class="method-icon">↗</div>
+                <span class="method-label">ÉTAPE 02</span>
+                <h3>Construire</h3>
+                <p>
+                    Identifier les pistes d'amélioration et structurer
+                    une réponse cohérente avec vos besoins.
+                </p>
+            </article>
+
+            <article class="method-card reveal">
+                <span class="method-number">03</span>
+                <div class="method-icon">✦</div>
+                <span class="method-label">ÉTAPE 03</span>
+                <h3>Accompagner</h3>
+                <p>
+                    Avancer avec une démarche claire et suivre
+                    la mise en œuvre des actions retenues.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- APPEL À L'ACTION -->
+<section class="services-final-cta">
+    <div class="container services-final-cta-inner reveal">
+        <div>
+            <span class="eyebrow">Votre projet commence ici</span>
+            <h2>Construisons ensemble<br>la prochaine étape.</h2>
+            <p>
+                Parlons de vos ambitions et des solutions adaptées
+                à votre entreprise.
+            </p>
+        </div>
+
+        <a href="{% url 'website:contact' %}" class="btn btn-gold">
+            Parlons de votre projet <span>↗</span>
+        </a>
+    </div>
+</section>
+<!-- MENTION DE DÉMONSTRATION -->
+<div class="demo-disclaimer">
+    NOVALYS CONSEIL 
+</div>
+
+{% endblock %}
+
+
+{% block extra_css %}
+<style>
+/* =========================================
+   PAGE SERVICES — NOVALYS CONSEIL
+   ========================================= */
+
+/* SECTION 1 : HERO */
+.services-hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 105px 0 115px;
+    color: #fff;
+    background-color: #10243a;
+    background-image:
+        linear-gradient(
+            100deg,
+            rgba(10, 27, 46, 0.94),
+            rgba(16, 36, 58, 0.76)
+        ),
+        url("{% static 'website/images/buildings.jpg' %}");
+    background-position: center;
+    background-size: cover;
+}
+
+.services-hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(
+        circle at 85% 25%,
+        rgba(201, 162, 90, 0.15),
+        transparent 36%
+    );
+}
+
+.services-hero-content {
+    max-width: 850px;
+}
+
+.services-hero h1 {
+    margin: 22px 0;
+    color: #fff;
+    font-size: clamp(2.7rem, 6vw, 5rem);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.045em;
+}
+
+.services-hero h1 span,
+.marquee-heading h2 span,
+.services-method-section .section-heading h2 span {
+    color: #d1a858;
+}
+
+.services-hero p {
+    max-width: 650px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 1.08rem;
+    line-height: 1.85;
+}
+
+.services-hero .eyebrow {
+    color: #d1a858;
+}
+
+
+/* SECTION 1 : CARTES */
+.services-intro {
+    padding-top: 95px;
+    padding-bottom: 100px;
+}
+
+.services-page-grid {
+    align-items: stretch;
+}
+
+.service-page-card {
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid rgba(16, 36, 58, 0.08);
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 10px 35px rgba(16, 36, 58, 0.055);
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.service-page-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 20px 45px rgba(16, 36, 58, 0.12);
+}
+
+.service-page-image {
+    position: relative;
+    overflow: hidden;
+    height: 235px;
+    background: #10243a;
+}
+
+.service-page-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.65s ease;
+}
+
+.service-page-card:hover .service-page-image img {
+    transform: scale(1.06);
+}
+
+.service-image-number {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    display: grid;
+    width: 43px;
+    height: 43px;
+    place-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 12px;
+    color: #fff;
+    background: rgba(16, 36, 58, 0.76);
+    backdrop-filter: blur(8px);
+}
+
+.service-page-card .service-card-body {
+    padding: 28px;
+}
+
+.service-page-card .service-number {
+    color: #b58d42;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.service-page-card h3 {
+    margin: 15px 0 12px;
+    color: #10243a;
+    font-size: 1.3rem;
+}
+
+.service-page-card p {
+    color: #657080;
+    line-height: 1.8;
+}
+
+.service-page-card .service-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    color: #10243a;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.service-page-card .service-link span {
+    color: #c9a25a;
+    transition: transform 0.25s ease;
+}
+
+.service-page-card .service-link:hover span {
+    transform: translate(3px, -3px);
+}
+
+
+/* SECTION 2 : INTRO DU CARROUSEL */
+.expertise-marquee-section {
+    overflow: hidden;
+    padding: 95px 0 42px;
+    color: #fff;
+    background: #10243a;
+}
+
+.marquee-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+    margin-bottom: 42px;
+}
+
+.marquee-heading h2 {
+    margin: 15px 0 0;
+    color: #fff;
+    font-size: clamp(2.1rem, 4.3vw, 3.5rem);
+    line-height: 1.12;
+    letter-spacing: -0.035em;
+}
+
+.marquee-heading .eyebrow {
+    color: #d1a858;
+}
+
+.marquee-heading > p {
+    max-width: 390px;
+    margin: 0 0 5px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+}
+
+
+/* CARROUSEL CONTINU DE DROITE À GAUCHE */
+.expertise-marquee {
+    overflow: hidden;
+    width: 100%;
+    padding: 12px 0 24px;
+}
+
+.expertise-track {
+    display: flex;
+    width: max-content;
+    gap: 22px;
+    animation: expertise-scroll 42s linear infinite;
+    will-change: transform;
+}
+
+.expertise-marquee:hover .expertise-track,
+.expertise-marquee:focus-within .expertise-track {
+    animation-play-state: paused;
+}
+
+.expertise-slide {
+    position: relative;
+    flex: 0 0 360px;
+    width: 360px;
+    height: 440px;
+    overflow: hidden;
+    border: 1px solid rgba(209, 168, 88, 0.3);
+    border-radius: 18px;
+    background: #19334e;
+    isolation: isolate;
+}
+
+.expertise-slide > img {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.expertise-slide:hover > img {
+    transform: scale(1.07);
+}
+
+.expertise-slide-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+        180deg,
+        rgba(8, 22, 38, 0.02) 10%,
+        rgba(8, 22, 38, 0.28) 42%,
+        rgba(8, 22, 38, 0.96) 100%
+    );
+}
+
+.expertise-slide-content {
+    position: absolute;
+    right: 25px;
+    bottom: 27px;
+    left: 25px;
+}
+
+.expertise-slide-content > span:first-child {
+    color: #e0bd73;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.13em;
+}
+
+.expertise-slide-content h3 {
+    margin: 13px 0 10px;
+    color: #fff;
+    font-size: 1.55rem;
+    line-height: 1.25;
+}
+
+.expertise-slide-content p {
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 0.92rem;
+    line-height: 1.7;
+}
+
+.expertise-slide-content a,
+.expertise-fake-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #e0bd73;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.expertise-slide-content a span {
+    transition: transform 0.25s ease;
+}
+
+.expertise-slide-content a:hover span {
+    transform: translate(4px, -3px);
+}
+
+.marquee-note {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 12px;
+}
+
+.marquee-note p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.58);
+    font-size: 0.8rem;
+}
+
+.marquee-note-dot {
+    flex: 0 0 7px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #d1a858;
+    box-shadow: 0 0 12px rgba(209, 168, 88, 0.55);
+}
+
+@keyframes expertise-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-50% - 11px));
+    }
+}
+
+
+/* SECTION 3 : MÉTHODE */
+.services-method-section {
+    padding: 100px 0;
+    color: #10243a;
+    background: #f7f8fa;
+}
+
+.services-method-section .section-heading {
+    margin-bottom: 48px;
+}
+
+.method-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.method-card {
+    position: relative;
+    overflow: hidden;
+    padding: 34px 30px;
+    border: 1px solid rgba(16, 36, 58, 0.09);
+    border-radius: 18px;
+    background: #fff;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.method-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(201, 162, 90, 0.65);
+    box-shadow: 0 16px 35px rgba(16, 36, 58, 0.07);
+}
+
+.method-number {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    color: rgba(16, 36, 58, 0.09);
+    font-size: 3.8rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.method-icon {
+    display: grid;
+    width: 54px;
+    height: 54px;
+    margin-bottom: 28px;
+    place-items: center;
+    border: 1px solid rgba(201, 162, 90, 0.35);
+    border-radius: 15px;
+    color: #b58d42;
+    background: #fbf5e9;
+    font-size: 1.65rem;
+}
+
+.method-label {
+    color: #b58d42;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+}
+
+.method-card h3 {
+    margin: 12px 0;
+    color: #10243a;
+    font-size: 1.4rem;
+}
+
+.method-card p {
+    margin: 0;
+    color: #697586;
+    line-height: 1.8;
+}
+
+
+/* APPEL À L'ACTION FINAL */
+.services-final-cta {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 75px 0;
+    color: #fff;
+    background-color: #10243a;
+    background-image:
+        linear-gradient(
+            100deg,
+            rgba(9, 25, 43, 0.95),
+            rgba(16, 36, 58, 0.84)
+        ),
+        url("{% static 'website/images/buildings.jpg' %}");
+    background-size: cover;
+    background-position: center;
+}
+
+.services-final-cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.services-final-cta .eyebrow {
+    color: #d1a858;
+}
+
+.services-final-cta h2 {
+    margin: 15px 0;
+    color: #fff;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.15;
+}
+
+.services-final-cta p {
+    max-width: 580px;
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.8;
+}
+
+.services-final-cta .btn {
+    flex-shrink: 0;
+}
+
+
+/* TABLETTES */
+@media (max-width: 900px) {
+    .marquee-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .method-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .services-final-cta-inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+
+/* TÉLÉPHONES */
+@media (max-width: 600px) {
+    .services-hero {
+        padding: 75px 0 82px;
+    }
+
+    .services-hero h1 {
+        font-size: clamp(2.4rem, 10vw, 3.5rem);
+    }
+
+    .services-hero p {
+        font-size: 0.98rem;
+    }
+
+    .services-intro,
+    .services-method-section {
+        padding-top: 68px;
+        padding-bottom: 72px;
+    }
+
+    .service-page-image {
+        height: 220px;
+    }
+
+    .service-page-card .service-card-body {
+        padding: 23px;
+    }
+
+    .expertise-marquee-section {
+        padding-top: 70px;
+    }
+
+    .expertise-track {
+        gap: 14px;
+        animation-duration: 34s;
+    }
+
+    .expertise-slide {
+        flex-basis: 285px;
+        width: 285px;
+        height: 370px;
+        border-radius: 15px;
+    }
+
+    .expertise-slide-content {
+        right: 20px;
+        bottom: 22px;
+        left: 20px;
+    }
+
+    .expertise-slide-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .method-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .method-card {
+        padding: 28px 24px;
+    }
+
+    .services-final-cta {
+        padding: 60px 0;
+    }
+
+    .services-final-cta .btn {
+        white-space: normal;
+    }
+}
+
+
+/* ACCESSIBILITÉ : réduire les animations si demandé */
+@media (prefers-reduced-motion: reduce) {
+    .expertise-track {
+        animation: none;
+    }
+
+    .service-page-card,
+    .service-page-image img,
+    .expertise-slide > img,
+    .method-card {
+        transition: none;
+    }
+}
+</style>
+{% endblock %}
